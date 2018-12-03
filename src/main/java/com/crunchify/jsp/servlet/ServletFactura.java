@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author fabian.giraldo
+ * @author Laura Parada
  */
 public class ServletFactura extends  HttpServlet{
     
