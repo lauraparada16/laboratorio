@@ -25,7 +25,7 @@
             input{
                 display: block;
                 padding: 10px;
-                width: 100%;
+                width: 95%;
                 margin: 30px 0;
                 font-size: 20px;
 
@@ -39,6 +39,7 @@
                 cursor: pointer;
                 border-radius: 20px;
                 margin-bottom: 0;  
+                width: 100%;
             }
 
             input[type="submit"]:hover{
@@ -51,7 +52,7 @@
             </style>
         </head>
         <body>
-            <form action="">
+            <form action="IniciarSesion">
                 <h1 align="center"> Formulario </h1>
                 <input type="text" placeholder="&#128272; Usuario" name="usuario">
                 <input type="password" placeholder="&#128272; Contraseña" name="clave">

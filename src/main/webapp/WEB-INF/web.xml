@@ -4,23 +4,45 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
     version="3.0">
     <display-name>CrunchifyJSPServletExample</display-name>
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-        <welcome-file>index.htm</welcome-file>
-        <welcome-file>index.jsp</welcome-file>
-        <welcome-file>default.html</welcome-file>
-        <welcome-file>default.htm</welcome-file>
-        <welcome-file>default.jsp</welcome-file>
-    </welcome-file-list>
-       
+    
     <servlet>
-        <servlet-name>Escuela</servlet-name>
-        <servlet-class>com.crunchify.jsp.servlet.ServletEscuela</servlet-class>
+        <servlet-name>IniciarSesion</servlet-name>
+        <servlet-class>com.crunchify.jsp.servlet.IniciarSesion</servlet-class>
     </servlet>
     
+    <servlet>
+        <servlet-name>ServletFactura</servlet-name>
+        <servlet-class>com.crunchify.jsp.servlet.ServletFactura</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ServletInventario</servlet-name>
+        <servlet-class>com.crunchify.jsp.servlet.ServletInventario</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ServletPersona</servlet-name>
+        <servlet-class>com.crunchify.jsp.servlet.ServletPersona</servlet-class>
+    </servlet>
+    
+     <servlet-mapping>
+        <servlet-name>IniciarSesion</servlet-name>
+        <url-pattern>/IniciarSesion</url-pattern>
+    </servlet-mapping>
+    
     <servlet-mapping>
-        <servlet-name>Escuela</servlet-name>
-        <url-pattern>/Escuela</url-pattern>
+        <servlet-name>ServletFactura</servlet-name>
+        <url-pattern>/ServletFactura</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ServletInventario</servlet-name>
+        <url-pattern>/ServletInventario</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ServletPersona</servlet-name>
+        <url-pattern>/ServletPersona</url-pattern>
     </servlet-mapping>
 
 </web-app>
