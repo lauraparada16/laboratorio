@@ -9,8 +9,8 @@
 <f:view>
     <html>
         <head>
-            <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
-            <title>JSP Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+            <title>Vendedor</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -155,10 +155,40 @@
                   padding: 8px 0;
                   text-align: center;
                 }
+
+                              .pricing-table-signup-pro {
+                margin-top: 25px;
+                padding-bottom: 10px;
+              }
+
+              .pricing-table-signup-pro a {
+                display: inline-block;
+                width: 10%;
+                height: 50px;
+                background: #2980b9;
+                line-height: 50px;
+
+                text-align: center;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+              }
+
+              .pricing-table-signup-pro a:hover {
+                text-decoration: none;
+                background-color: #1d6391;
+                color: #fff;
+              }
+
+              .pricing-table-signup-pro a:active {                
+                background-color: #1d6391;
+                color: #fff;
+              }
+
             </style>
         </head>
         <body>
-            <div class="container">
+ <div class="container">
   <h2>ALL - MALL</h2>
   <p>Todo a sus manos</p>
   <ul class="nav nav-tabs">
@@ -183,22 +213,28 @@
     </thead>
     <tbody>
       <tr>
-        <td>1</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>001</td>
+        <td>Mermelada</td>
+        <td>6.000</td>
+        <td>5</td>
+        <td>30.000</td>
       </tr>
     </tbody>
   </table>
   </div>
+              <div class="pricing-table-signup-pro">
+              <p><a href="#">Buscar</a> 
+              <a href="#">Nuevo</a>
+              <a href="#">Eliminar</a>
+              <a href="#">Modificar</a></p>
+            </div>
 </div>
     </div>
     <div id="menu1" class="tab-pane fade">
       <h3>Factura</h3>
               <header class="clearfix">
       <div id="logo">
-        <img src="C:/Users/Laura Parada/Documents/SextoSemestre/BaseDatos/allmall.png">
+        <img src="images/allmall.png">
       </div>
       <h1>Factura</h1>
       <div id="company" class="clearfix">
@@ -209,10 +245,10 @@
       </div>
       <div id="project">
         <div><span>SERVICIO</span> Productos de la canasta familiar</div>
-        <div><span>CLIENTE</span> John Doe</div>
-        <div><span>DIRECCION</span> 796 Silver Harbour, TX 79273, US</div>
-        <div><span>EMAIL</span> <a href="mailto:john@example.com">john@example.com</a></div>
-        <div><span>FECHA</span> August 17, 2015</div>
+        <div><span>CLIENTE</span> Diana Estrada</div>
+        <div><span>DIRECCION</span> Calle 16 32-16 </div>
+        <div><span>EMAIL</span> <a href="mailto:dianae@outlook.es">dianae@outlook.es</a></div>
+        <div><span>FECHA</span> Agosto 17, 2018</div>
       </div>
     </header>
     <main>
@@ -228,55 +264,27 @@
         </thead>
         <tbody>
           <tr>
-            <td class="service">0001</td>
-            <td class="desc">Pan BIMBO</td>
-            <td class="unit">$4.000</td>
+            <td class="service">001</td>
+            <td class="desc">Mermelada</td>
+            <td class="unit">$6.000</td>
             <td class="qty">26</td>
-            <td class="total">$104.000</td>
-          </tr>
-          <tr>
-            <td class="service">Development</td>
-            <td class="desc">Developing a Content Management System-based Website</td>
-            <td class="unit">$40.00</td>
-            <td class="qty">80</td>
-            <td class="total">$3,200.00</td>
-          </tr>
-          <tr>
-            <td class="service">SEO</td>
-            <td class="desc">Optimize the site for search engines (SEO)</td>
-            <td class="unit">$40.00</td>
-            <td class="qty">20</td>
-            <td class="total">$800.00</td>
-          </tr>
-          <tr>
-            <td class="service">Training</td>
-            <td class="desc">Initial training sessions for staff responsible for uploading web content</td>
-            <td class="unit">$40.00</td>
-            <td class="qty">4</td>
-            <td class="total">$160.00</td>
+            <td class="total">$156.000</td>
           </tr>
           <tr>
             <td colspan="4">SUBTOTAL</td>
-            <td class="total">$5,200.00</td>
-          </tr>
-          <tr>
-            <td colspan="4">TAX 19%</td>
-            <td class="total">$1,300.00</td>
+            <td class="total">$156.000</td>
           </tr>
           <tr>
             <td colspan="4" class="grand total">TOTAL</td>
-            <td class="grand total">$6,500.00</td>
+            <td class="grand total">$156.000</td>
           </tr>
         </tbody>
       </table>
       <div id="notices">
-        <div>NOTICE:</div>
+        <div>NOTICIA:</div>
         <div class="notice">10% de descuento en productos de aseo</div>
       </div>
     </main>
-    <footer>
-      Invoice was created on a computer and is valid without the signature and seal.
-    </footer>
     </div>
   </div>
     <hr>

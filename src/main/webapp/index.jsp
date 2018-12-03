@@ -12,73 +12,30 @@ body {
 }
 </style>
  
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <title>Estudiantes</title>
-    </head>
-    <body>
-        <div align="center" style="margin-top: 50px;">
-            <%
-              if(request.getAttribute("escuelas")!=null){
-            %>   
-            <form action="Escuela" method="post">
-                <select name = "escuela">
-           <%
-              List<Escuela> escuelas  = (List<Escuela>)request.getAttribute("escuelas");  
-               for (Escuela escuela : escuelas) {
-             %>
-               <option value="<%=escuela.getCodigo()%>"><%=escuela.getNombre()%></option>
-             
-             <%
-               }
-           %>
-                </select>
-                <input type="submit" value="submit">
-            </form>
-            <%
-              }
-            
-            %>
-            
-          
-        </div>
-
-
-        <div align="center" style="margin-top: 50px;">
-            
-            <%
-              if(request.getAttribute("estudiantes")!=null){
-            %>      
-              <table style="width:100%">
-               <tr>
-                    <th>Codigo</th>
-                    <th>Nombre</th> 
-                    <th>Escuela</th>
-              </tr>
-                
-              <%
-              List<Estudiante> estudiantes  = (List<Estudiante>)request.getAttribute("estudiantes");  
-               for (Estudiante estudiante : estudiantes) {
-             %>
-             
-               <tr>
-                  <td><%=estudiante.getCodigo()%></td>
-                  <td><%=estudiante.getNombre()%></td> 
-                  <td><%=estudiante.getEscuela()%></td>
-              </tr>
-             
-             <%
-             }
-             %>
-               
-                </table>
-               
-            <%
-              }
-            %>   
-            
-        </div>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Crunchify JSP</title>
+</head>
+<body>
+    <div align="center" style="margin-top: 50px;">
+        <form action="CrunchifyServlet">
+           Id Depto:  <input type="text" name="id" size="20px"> <br>
+           Nombre Depto:  <input type="text" name="nombre" size="20px"> <br><br>
+        <input type="submit" value="submit">
+        </form>
+     </div>
+ 
+    <%
+       if( request.getAttribute("departamentos")!=null){
+          List<Departamento> departamentos  = (List<Departamento>)request.getAttribute("departamentos");
+           for (Departamento departamento : departamentos) {
+         %>      
+         <h1> <%=departamento.getNom_departamento()%> </h1><br/> 
+         <%      
+          }
+       }
+      
     
-    
+    %>
 </body>
 </html>
